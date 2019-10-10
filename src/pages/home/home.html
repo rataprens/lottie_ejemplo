@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ejemplo lottie
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <button ion-button (click)="play()" full rounded>Ingresar </button>
+  <lottie-animation-view
+  [options]="lottieConfig"
+  [width]="200"
+  [height]="400"
+  (animCreated)="handleAnimation($event)"
+  *ngIf="mostrar">
+</lottie-animation-view>
+</ion-content>
